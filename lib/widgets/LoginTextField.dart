@@ -16,18 +16,24 @@ class _LoginTextFieldState extends State<LoginTextField>{
       height: 70.0,
       
       child: TextField(
+
         enabled: true,
         cursorRadius: Radius.circular(50.0),
-        autofocus: true,
         cursorColor: marineGreen,
+        cursorWidth: 0.4,
         style: TextStyle(
-          color: marineGreen
+          color: marineGreen,
+          fontSize: 13.0
         ),
         decoration: InputDecoration(
-          
+          prefixIcon: Icon(Icons.account_circle),
+          hintText: "Username",
           filled: true,
           fillColor: grayPrimary,
           border: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: marineGreen
+            ),
             borderRadius: const BorderRadius.all(
               Radius.circular(5.0)
             )
