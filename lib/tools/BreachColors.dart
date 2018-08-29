@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 /* This is the primary color */
-var greyOne = const Color(0xFF1A1A1A);
-var greyTwo = const Color(0xFF232222);
+var grayPrimary = const Color(0xFF37464f);
+var grayLight = const Color(0xFF62717b);
+var grayDark = const Color(0xFF101f27);
 
 var marineGreen = const Color(0xFF59e5b4);

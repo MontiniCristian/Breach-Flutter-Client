@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../tools/BreachColors.dart';
 
 class LoginTextField extends StatefulWidget{
   @override
@@ -16,9 +17,22 @@ class _LoginTextFieldState extends State<LoginTextField>{
       
       child: TextField(
         enabled: true,
+        cursorRadius: Radius.circular(50.0),
+        autofocus: true,
+        cursorColor: marineGreen,
+        style: TextStyle(
+          color: marineGreen
+        ),
         decoration: InputDecoration(
-          fillColor: Colors.green,
-          border: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)))
+          
+          filled: true,
+          fillColor: grayPrimary,
+          border: OutlineInputBorder(
+            borderRadius: const BorderRadius.all(
+              Radius.circular(5.0)
+            )
+          )
+
           //border: OutlineInputBorder(borderRadius: BorderRadius.horizontal())
         )
       ),
