@@ -11,17 +11,14 @@ class _LoginTextFieldState extends State<LoginTextField>{
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20.0),
-      height: 10.0,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(1.0)),
-        color: Colors.black
-      ),
+      padding: EdgeInsets.all(25.0),
+      height: 70.0,
+      
       child: TextField(
         enabled: true,
         decoration: InputDecoration(
           fillColor: Colors.green,
-          border: InputBorder.none
+          border: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)))
           //border: OutlineInputBorder(borderRadius: BorderRadius.horizontal())
         )
       ),

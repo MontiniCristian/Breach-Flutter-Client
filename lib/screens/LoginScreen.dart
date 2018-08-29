@@ -24,31 +24,17 @@ class _LoginScreenState extends State<LoginScreen>{
               ),
             ),
             Expanded(
+              flex: 1,
               child: Column(
+                
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                
                 children: <Widget>[
-                  Expanded(
-                    child: Container(),
-                  ),
-                  
-                  /// This widget contains the username [LoginTextField]
-                  Expanded(
-                    child: Container(
-                      color: Colors.redAccent,
-                      child: LoginTextField(),
-                    ),
-                  ),
-
-                  /// This widget contains the password [LoginTextField]
-                  Expanded(
-                    child: Container(
-                      color: Colors.red
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(),
-                  ),
-                ]
-            ),
+                  LoginTextField(),
+                  LoginTextField()
+                ],
+              ),
             ),
 
             Expanded(
