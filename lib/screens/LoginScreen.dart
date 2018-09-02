@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../tools/BreachColors.dart';
 import '../widgets/LoginTextField.dart';
+import '../widgets/LoginForm.dart';
+import '../widgets/LoginButton.dart';
 
 class LoginScreen extends StatefulWidget{
   
@@ -24,17 +26,9 @@ class _LoginScreenState extends State<LoginScreen>{
               ),
             ),
             Expanded(
-              flex: 1,
-              child: Column(
-                
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                
-                children: <Widget>[
-                  LoginTextField(),
-                  LoginTextField()
-                ],
-              ),
+
+              //flex: 1,
+              child: new LoginForm(),
             ),
 
             Expanded(
@@ -47,6 +41,8 @@ class _LoginScreenState extends State<LoginScreen>{
 
   }
 }
+
+
 
 // Container(
 //         color: greyOne,

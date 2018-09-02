@@ -12,11 +12,8 @@ class _LoginTextFieldState extends State<LoginTextField>{
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(25.0),
-      height: 70.0,
-      
+      margin: EdgeInsets.only(right: 20.0,left: 20.0, top: 10.0),
       child: TextField(
-
         enabled: true,
         cursorRadius: Radius.circular(50.0),
         cursorColor: marineGreen,
@@ -26,7 +23,8 @@ class _LoginTextFieldState extends State<LoginTextField>{
           fontSize: 13.0
         ),
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.account_circle),
+          
+          prefixIcon: Icon(Icons.account_circle, color: marineGreen),
           hintText: "Username",
           filled: true,
           fillColor: grayPrimary,
@@ -35,11 +33,9 @@ class _LoginTextFieldState extends State<LoginTextField>{
               color: marineGreen
             ),
             borderRadius: const BorderRadius.all(
-              Radius.circular(5.0)
+              Radius.circular(10.0)
             )
           )
-
-          //border: OutlineInputBorder(borderRadius: BorderRadius.horizontal())
         )
       ),
     );
